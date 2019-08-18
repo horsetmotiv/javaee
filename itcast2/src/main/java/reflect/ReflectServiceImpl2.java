@@ -2,13 +2,12 @@ package reflect;
 
 /**
  * @author chenwei
- * @createTime 2019-08-18 15:46
+ * @createTime 2019-08-18 21:16
  * @description
  */
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,9 +29,20 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 
-public class ReflectServiceImpl {
-    //需要反射的方法
-    public void sayHello(String name){
-        System.out.println("Hello "+name);
+public class ReflectServiceImpl2 {
+//    public static void main(String[] args) throws IOException {
+//
+//    }
+
+    private String name;
+
+    public ReflectServiceImpl2(String name){
+        this.name = name;
     }
+    public void sayHello(){
+        System.out.println("heeLL+"+name);
+    }
+
+
+
 }
